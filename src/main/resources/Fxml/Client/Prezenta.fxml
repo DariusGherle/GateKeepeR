@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="850.0" prefWidth="750.0" stylesheets="@../../Styles/StarePoarta.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Portar.PrezentaController">
+   <VBox layoutX="56.0" layoutY="90.0" prefHeight="822.0" prefWidth="722.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <ListView fx:id="prezenta_listview" prefHeight="600.0" prefWidth="722.0" styleClass="accessLog_listview" />
+      <HBox prefHeight="228.0" prefWidth="722.0" styleClass="acc_summary_container">
+         <VBox prefHeight="210.0" prefWidth="219.0" styleClass="accounts_view">
+            <Label styleClass="section_title" text="Nume:" />
+            <TextField fx:id="numeprez_field" />
+            <Label styleClass="section_title" text="Id:" />
+            <TextField fx:id="idPrez_fld" />
+         </VBox>
+         <Button fx:id="cautaAng_btn" mnemonicParsing="false" prefWidth="135.0" text="Cauta angajat">
+            <graphic>
+               <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20" />
+            </graphic>
+         </Button>
+      </HBox>
+   </VBox>
 </AnchorPane>

@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="adauga_angajat_container" stylesheets="@../../Styles/AdaugaAng.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Admin.AngajatNouController">
+    <Text layoutX="83.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aduaga un angajat nou" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+    <VBox fillWidth="false" layoutX="14.0" layoutY="31.0" prefHeight="724.0" prefWidth="275.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" />
+        <TextField fx:id="aNume_fld" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id Angajat" />
+        <TextField fx:id="aID_fld" />
+        <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parola:" />
+        <TextField fx:id="aParola_fld" />
+        <Text layoutX="10.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acces Auto:" />
+        <CheckBox fx:id="aAccesAuto_box" mnemonicParsing="false" />
+      <TextField fx:id="aNrMasina_fld" styleClass="payee_adress_lbl" />
+        <Text layoutX="10.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program:" />
+        <CheckBox fx:id="aProgram_box" layoutX="10.0" layoutY="157.0" mnemonicParsing="false" text="Adauga program intrare pe poarta:" />
+      <ChoiceBox fx:id="aProgramPoarta_choiceBox" prefWidth="150.0" styleClass="account_selector" />
+        <Text layoutX="10.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departament:" />
+      <ChoiceBox fx:id="aDepartament_choiceBox" prefWidth="150.0" styleClass="account_selector" />
+        <Text layoutX="10.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numarul de ore:" />
+        <TextField fx:id="aNormaOre_fld" layoutX="10.0" layoutY="245.0" />
+        <Button fx:id="aCreeazaAngajat_btn" mnemonicParsing="false" text="Creeaza Angajat Nou" />
+        <Label fx:id="error_lbl" layoutX="10.0" layoutY="172.0" styleClass="error_lbl" />
+    </VBox>
+    <VBox fillWidth="false" layoutX="24.0" layoutY="41.0" prefHeight="724.0" prefWidth="275.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="40.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" />
+        <TextField fx:id="pNume_fld" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id Angajat" />
+        <TextField fx:id="pID_fld" />
+        <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parola:" />
+        <TextField fx:id="pParola_fld" />
+        <Text layoutX="10.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acces Auto:" />
+        <CheckBox fx:id="pAccesAuto_box" mnemonicParsing="false" />
+        <TextField fx:id="pNrMasina_fld" styleClass="payee_adress_lbl" />
+        <Text layoutX="10.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts:" />
+        <CheckBox fx:id="pTura_box" layoutX="10.0" layoutY="157.0" mnemonicParsing="false" text="Selecteaza tura:" />
+        <ChoiceBox fx:id="pTura_choiceBox" prefWidth="150.0" styleClass="account_selector" />
+        <Text layoutX="10.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Norma:" />
+        <CheckBox fx:id="pNorma_box" layoutX="10.0" layoutY="208.0" mnemonicParsing="false" text="Adauga norma de ore:" />
+        <Text layoutX="10.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numarul de ore:" />
+        <TextField fx:id="pNormaOre_fld" layoutX="10.0" layoutY="245.0" />
+        <Button fx:id="pCreeazaPortar_btn" mnemonicParsing="false" text="Creeaza Portar Nou" />
+        <Label fx:id="error_lbl1" layoutX="10.0" layoutY="172.0" styleClass="error_lbl" />
+    </VBox>
+   <Text layoutX="300.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aduaga un portar nou" />
+    <VBox layoutX="575.0" layoutY="82.0" prefHeight="724.0" prefWidth="240.0" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="40.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" />
+        <TextField fx:id="aNume_fld1" />
+        <Button fx:id="aCreeazaAngajat_btn1" mnemonicParsing="false" text="Cauta Angajat" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="error_lbl" text="Angajat gasit" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id Angajat" />
+        <Text fx:id="sIdAngajat_lbl" strokeType="OUTSIDE" strokeWidth="0.0" text="Id Angajat" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Departament:" />
+        <Text fx:id="sDepartament_lbl" strokeType="OUTSIDE" strokeWidth="0.0" text="Departament:" />
+        <Line endX="100.0" startX="-100.0" stroke="#8e8e8e" strokeWidth="9.0" />
+        <CheckBox fx:id="sSefDepartament_box" mnemonicParsing="false" text="Sef Departament" />
+        <CheckBox fx:id="sAdaugaAccesAuto_box" mnemonicParsing="false" text="Adauga Acces Auto:" />
+        <TextField fx:id="sNrMasina_fld" styleClass="payee_adress_lbl" />
+        <CheckBox fx:id="sSchimbaProgramPoarta_box" mnemonicParsing="false" text="Schimba program poarta" />
+        <ChoiceBox fx:id="sProgramLucu_choiceBox" prefWidth="150.0" styleClass="account_selector" />
+        <CheckBox fx:id="sNorma_box" mnemonicParsing="false" text="Schimba norma de ore:" />
+        <TextField fx:id="sNormaOre_fld" />
+        <Button fx:id="modificaAngajat_btn" mnemonicParsing="false" text="Modifica Angajat" />
+    </VBox>
+   <Text layoutX="590.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifica Status Angajat:" />
 </AnchorPane>

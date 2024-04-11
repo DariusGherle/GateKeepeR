@@ -1,0 +1,134 @@
+.adauga_angajat_container {
+    -fx-background-color: #EEEEEE;
+}
+
+.adauga_angajat_container Text {
+    -fx-font-size: 1.2em;
+    -fx-fill: #888888;
+}
+
+.adauga_angajat_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #000000;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+
+.adauga_angajat_container TextField {
+    -fx-pref-width: 250;
+    -fx-pref-height: 35;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.payee_adress_lbl {
+    -fx-pref-width: 250;
+    -fx-pref-height: 30;
+    -fx-padding: 5;
+    -fx-background-color: #888888;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+/* Accounts View */
+.accounts_view {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10 0 0 10;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: center;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #DDDDDD;
+    -fx-spacing: 10;
+}
+
+.account {
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 10, 0, 0, 10);
+
+}
+
+.account VBox {
+    -fx-background-color: #FFFFFF;
+}
+
+.account Text {
+    -fx-fill: #FFFFFF;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+}
+
+.prezenta Text {
+    -fx-fill:#FFFFFF;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 5em;
+}
+
+/* List View*/
+
+.accessLog_listview {
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #AAAAAA;
+}
+
+.accessLog_listview .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+.account FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
+
+.account_gradient {
+    -fx-background-color: linear-gradient(to right, #c93030, #944545);
+}
+
+.account_balance {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+}
+
+.account_number {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+    -fx-text-alignment: center;
+}
+
+
+.adauga_angajat_container Button {
+    -fx-background-color: linear-gradient(to right, #000000, #253529);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-pref-width: 250;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+}
+
+.adauga_angajat_container Button:hover {
+    -fx-cursor: hand;
+}
+
+.error_lbl {
+    -fx-text-fill: #FF0000;
+}
+
+/* Account Selector ChoiceBox Styles */
+.account_selector {
+    -fx-background-color: #ECF39E;
+}
+
+.account_selector .label {
+    -fx-text-fill: #880808;
+    -fx-font-size: 1.1em;
+
+}
+
+.account_selector .arrow {
+    -fx-background-color: #132A13;
+}
