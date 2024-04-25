@@ -37,5 +37,16 @@
 }
 
 
+.delete_btn {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #FF0000;
+}
 
+.delete_btn FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
+
+.delete_btn:hover {
+    -fx-cursor: hand;
+}
 

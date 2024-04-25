@@ -10,8 +10,8 @@
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="850.0" prefWidth="750.0" stylesheets="@../../Styles/StarePoarta.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Portar.PrezentaController">
-   <VBox layoutX="56.0" layoutY="90.0" prefHeight="822.0" prefWidth="722.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
-      <ListView fx:id="prezenta_listview" prefHeight="600.0" prefWidth="722.0" styleClass="accessLog_listview" />
+   <VBox layoutX="56.0" layoutY="90.0" prefHeight="822.0" prefWidth="722.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <ListView fx:id="prezenta_listview" prefHeight="500.0" styleClass="accessLog_listview" />
       <HBox prefHeight="228.0" prefWidth="722.0" styleClass="acc_summary_container">
          <VBox prefHeight="210.0" prefWidth="219.0" styleClass="accounts_view">
             <Label styleClass="section_title" text="Nume:" />

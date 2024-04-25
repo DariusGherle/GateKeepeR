@@ -21,4 +21,5 @@ module com.example.gatekeepr {
     exports com.example.gatekeepr.Controllers.UserAutorizat;
     exports com.example.gatekeepr.Models;
     exports com.example.gatekeepr.Views;
+    exports com.example.gatekeepr.Controllers.Cells;
 }

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane prefHeight="60.0" prefWidth="550.0" styleClass="cell_container" stylesheets="@../../Styles/AccessCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="60.0" prefWidth="550.0" styleClass="cell_container" stylesheets="@../../Styles/AccessCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Cells.AccessCellController">
     <VBox layoutY="14.0" prefHeight="50.0" prefWidth="50.0" styleClass="trans_icon_container" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
         <FontAwesomeIconView fx:id="in_icon" glyphName="LONG_ARROW_RIGHT" size="20" />
         <FontAwesomeIconView fx:id="out_icon" glyphName="LONG_ARROW_LEFT" size="20" />
@@ -15,7 +15,7 @@
     <Label fx:id="access_date_lbl" layoutX="99.0" layoutY="13.0" styleClass="trans_date_lbl" text="2023-07-08" AnchorPane.leftAnchor="99.0" AnchorPane.topAnchor="13.0" />
     <Label fx:id="nume_lbl" layoutX="183.0" layoutY="21.0" styleClass="trans_pAdress_lbl" text="Denis Lazau" AnchorPane.leftAnchor="183.0" AnchorPane.topAnchor="21.0" />
     <Line endY="20.0" layoutX="275.0" layoutY="21.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="22.0" />
-    <Label fx:id="id_lbl" layoutX="318.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="ID:52149" AnchorPane.leftAnchor="318.0" AnchorPane.topAnchor="13.0" />
+    <Label fx:id="carePoarta_lbl" layoutX="318.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="Poarta" AnchorPane.leftAnchor="318.0" AnchorPane.topAnchor="13.0" />
     <Label fx:id="status_lbl" layoutX="487.0" layoutY="17.0" styleClass="trans_amount_lbl" text="Angajat" AnchorPane.rightAnchor="14.200000000000045" AnchorPane.topAnchor="17.0">
         <graphic>
             <FontAwesomeIconView fill="WHITE" glyphName="USER" />
@@ -23,9 +23,9 @@
     </Label>
     <Button fx:id="message_btn" layoutX="424.0" layoutY="18.0" mnemonicParsing="false" styleClass="trans_amount_lbl" AnchorPane.rightAnchor="101.19999999999999" AnchorPane.topAnchor="18.0">
         <graphic>
-            <FontAwesomeIconView fill="#f2df38" glyphName="BELL" size="15" />
+            <FontAwesomeIconView fx:id="Clock_icon" fill="#f2df38" glyphName="CLOCK_ALT" size="15" />
         </graphic>
     </Button>
    <Label fx:id="access_time_lbl" layoutX="99.0" layoutY="31.0" styleClass="trans_date_lbl" text="13:52" />
-   <Label fx:id="nrMasina_lbl" layoutX="318.0" layoutY="29.0" styleClass="trans_pAdress_lbl" text="NR_MAsina" />
+   <Label fx:id="nrMasina_lbl" layoutX="318.0" layoutY="29.0" styleClass="trans_pAdress_lbl" text="NR_MAsina/ID" />
 </AnchorPane>
