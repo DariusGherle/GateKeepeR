@@ -1,5 +1,6 @@
 package com.example.gatekeepr.Controllers.Cells;
 
+import com.example.gatekeepr.Models.Access;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -19,6 +20,12 @@ public class AccessCellController implements Initializable {
     public Button message_btn;
     public Label access_time_lbl;
     public Label nrMasina_lbl;
+
+    private  final Access access;
+
+    public AccessCellController(Access access){
+        this.access=access;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

@@ -7,6 +7,7 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -237,6 +238,8 @@ public class ViewFactory {
     //
     //Stage
     //
+
+
     private void createStage(FXMLLoader loader) {
         Scene scene=null;
         try {
@@ -247,6 +250,9 @@ public class ViewFactory {
 
         Stage stage=new Stage();
         stage.setScene(scene);
+        stage.getIcons().add(new Image(String.valueOf(getClass().getResource("/Images/icons8-google-plus-32.png"))));
+        //Resizable
+        stage.setResizable(false);
         stage.setTitle("GateKeepR");
         stage.show();
     }

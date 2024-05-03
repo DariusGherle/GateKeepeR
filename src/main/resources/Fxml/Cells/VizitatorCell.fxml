@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane prefHeight="60.0" prefWidth="500.0" styleClass="cell_container" stylesheets="@../../Styles/AccessCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="60.0" prefWidth="500.0" styleClass="cell_container" stylesheets="@../../Styles/AccessCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Cells.VizitatorCellController">
     <Label fx:id="access_date_lbl" layoutX="99.0" layoutY="13.0" styleClass="trans_date_lbl" text="2023-07-08" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0" />
     <Label fx:id="nume_lbl" layoutX="183.0" layoutY="21.0" styleClass="trans_pAdress_lbl" text="Denis Lazau" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="21.0" />
     <Line endY="20.0" layoutX="275.0" layoutY="21.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="22.0" />
