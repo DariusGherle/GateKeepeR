@@ -1,5 +1,6 @@
 package com.example.gatekeepr.Controllers.Cells;
 
+import com.example.gatekeepr.Models.Prezenta;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -16,6 +17,10 @@ public class PrezentaCellController implements Initializable {
     public Label oraIntrare_lbl;
     public Button plecare_btn;
     public Label Intarziat_lbl;
+
+    public final Prezenta prezenta;
+
+    public PrezentaCellController(Prezenta prezenta) {this.prezenta=prezenta;}
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

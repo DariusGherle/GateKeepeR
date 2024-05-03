@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="60.0" prefWidth="800.0" styleClass="cell_container" stylesheets="@../../Styles/AccessCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Cells.AngajatCellController">
+    <Label layoutX="99.0" layoutY="13.0" styleClass="trans_date_lbl" text="Id:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0" />
+    <Label fx:id="nume_lbl" layoutX="183.0" layoutY="21.0" styleClass="trans_pAdress_lbl" text="Denis Lazau" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="21.0" />
+    <Line endY="20.0" layoutX="299.0" layoutY="20.0" AnchorPane.leftAnchor="298.5" AnchorPane.topAnchor="19.5" />
+    <Label layoutX="318.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="Poarta" AnchorPane.leftAnchor="318.0" AnchorPane.topAnchor="13.0" />
+    <Label fx:id="Id_lbl" layoutX="99.0" layoutY="31.0" styleClass="trans_date_lbl" text="Marca" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="26.4" />
+    <Label fx:id="nrMasina_lbl" layoutX="318.0" layoutY="29.0" styleClass="trans_pAdress_lbl" text="NR_MAsina" AnchorPane.topAnchor="26.4" />
+    <Label fx:id="CNP_lbl" layoutX="180.0" layoutY="21.0" styleClass="trans_pAdress_lbl" text="5021340027568" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="26.4" />
+    <Button fx:id="concediaza_btn" layoutX="713.0" layoutY="17.0" mnemonicParsing="false" styleClass="delete_btn" text="Concediaza" AnchorPane.rightAnchor="14.0">
+        <graphic>
+            <FontAwesomeIconView glyphName="WINDOW_CLOSE_ALT" size="15" />
+        </graphic>
+    </Button>
+    <Label layoutX="200.0" layoutY="8.0" styleClass="trans_pAdress_lbl" text="CNP:" AnchorPane.topAnchor="13.0" />
+   <Line endY="20.0" layoutX="72.0" layoutY="20.0" AnchorPane.leftAnchor="71.5" AnchorPane.topAnchor="19.5" />
+   <Line endY="20.0" layoutX="400.0" layoutY="16.0" AnchorPane.topAnchor="19.5" />
+   <Label layoutX="412.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="Departament" AnchorPane.topAnchor="13.0" />
+   <Label fx:id="departament_lbl" layoutX="412.0" layoutY="30.0" styleClass="trans_pAdress_lbl" text="NR_MAsina" AnchorPane.topAnchor="26.4" />
+   <Line endY="20.0" layoutX="503.0" layoutY="20.0" AnchorPane.topAnchor="19.5" />
+   <Label layoutX="516.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="Interval Orar Acces:" AnchorPane.topAnchor="13.0" />
+   <Label fx:id="intervalOrar_lbl" layoutX="516.0" layoutY="30.0" styleClass="trans_pAdress_lbl" text="IOACCess" AnchorPane.topAnchor="26.0" />
+</AnchorPane>
