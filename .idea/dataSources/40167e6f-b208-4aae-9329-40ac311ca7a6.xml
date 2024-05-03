@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="LocalDB">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.49">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.52">
     <root id="1">
       <ServerVersion>3.43.0</ServerVersion>
     </root>
@@ -446,8 +446,7 @@
     <routine id="176" parent="1" name="fts5"/>
     <schema id="177" parent="1" name="main">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-04-25.15:40:50.790</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-04-25.12:40:50</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-25.12:40:50</LastIntrospectionLocalTimestamp>
     </schema>
     <argument id="178" parent="16">
       <ArgumentDirection>R</ArgumentDirection>

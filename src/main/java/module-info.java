@@ -12,6 +12,8 @@ module com.example.gatekeepr {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires spring.jdbc;
+    requires spring.context;
 
     opens com.example.gatekeepr to javafx.fxml;
     exports com.example.gatekeepr;

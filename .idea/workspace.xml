@@ -5,28 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c9358f5-e581-4fb6-be62-4eaf38843191" name="Changes" comment="DADA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/AngajatCellController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/VizitatorCellController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Access.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Angajat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Prezenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Vizitator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/AccessCellFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/AngajatCellFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/PrezentaCellFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/VizitatorCellFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Cells/AngajatCell.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56eae218-5b92-4371-810b-0b37e08a8c81.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56eae218-5b92-4371-810b-0b37e08a8c81/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f2539f92-cad2-4656-a2b7-297a83bf7795.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f2539f92-cad2-4656-a2b7-297a83bf7795/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40167e6f-b208-4aae-9329-40ac311ca7a6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/40167e6f-b208-4aae-9329-40ac311ca7a6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/AccessCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/AccessCellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/PrezentaCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/PrezentaCellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Cells/VizitatorCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Cells/VizitatorCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Classes/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Classes/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/AcesslogsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/AcesslogsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/AdminsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/AdminsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/DBOperationsAccesslogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/DBOperationsAccesslogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/DBOperationsAdmins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/DBOperationsAdmins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adminbean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adminbean.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +37,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN"
+      &quot;state&quot;: &quot;OPEN&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -63,6 +54,9 @@
         <option name="url" value="https://github.com/Dennis844/GateKeepR.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -81,7 +75,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "Z:/JavaLab/GateKeepR",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -146,6 +141,7 @@
       <workItem from="1713979457466" duration="5941000" />
       <workItem from="1714047283498" duration="2750000" />
       <workItem from="1714714859446" duration="14486000" />
+      <workItem from="1714767341070" duration="1145000" />
     </task>
     <task id="LOCAL-00001" summary="DADA">
       <option name="closed" value="true" />
