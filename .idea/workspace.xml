@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c9358f5-e581-4fb6-be62-4eaf38843191" name="Changes" comment="DADA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Classes/EdyClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40167e6f-b208-4aae-9329-40ac311ca7a6.xml" beforeDir="false" />
+    <list default="true" id="6c9358f5-e581-4fb6-be62-4eaf38843191" name="Changes" comment="Test 2024/05.03">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Portar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/UtilizatorAutorizat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Classes/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Classes/EdyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/AdminsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/AdminsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/DBOperationsAdmins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/DBOperationsAdmins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Prezenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Prezenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712831053144</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test 2024/05.03">
+      <option name="closed" value="true" />
+      <created>1714769136337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714769136337</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +171,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DADA" />
-    <option name="LAST_COMMIT_MESSAGE" value="DADA" />
+    <MESSAGE value="Test 2024/05.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 2024/05.03" />
   </component>
 </project>

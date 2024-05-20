@@ -1,6 +1,6 @@
 package com.example.gatekeepr;
 
-import com.example.gatekeepr.Classes.Admin;
+//import com.example.gatekeepr.Classes.Admin;
 import com.example.gatekeepr.Database.DBOperationsAdmins;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,12 +15,12 @@ public class Testing {
 
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("adminbean.xml");
-        DBOperationsAdmins dbOperations = (DBOperationsAdmins) context.getBean("adminDBbean");
-
-        List<Admin> listaAdmini = dbOperations.getListaAdmin();
-
-        listaAdmini.stream().forEach(System.out::println);
+//        ApplicationContext context = new ClassPathXmlApplicationContext("adminbean.xml");
+//        DBOperationsAdmins dbOperations = (DBOperationsAdmins) context.getBean("adminDBbean");
+//
+//        List<Admin> listaAdmini = dbOperations.getListaAdmin();
+//
+//        listaAdmini.stream().forEach(System.out::println);
 
     }
 }
