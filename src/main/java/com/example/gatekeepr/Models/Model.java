@@ -1,5 +1,6 @@
 package com.example.gatekeepr.Models;
 
+import com.example.gatekeepr.Database.MockDatabase.ClientDataMock;
 import com.example.gatekeepr.Views.AccountType;
 import com.example.gatekeepr.Views.ViewFactory;
 
@@ -53,8 +54,17 @@ public class Model {
     }
 
     public void evaluatePortarCred(String pAdresa, String parola) {
-        Statement statement;
-        ResultSet resultSet=null;
-        //Completat la terminarea DB
+        ClientDataMock clientDataMock = new ClientDataMock();  // Creează o instanță a clasei ClientDataMock
+        ResultSet resultSet = clientDataMock.getClientData(pAdresa, parola);  // Apelează metoda non-statică getClientData
+        try {
+            if (resultSet.isBeforeFirst()) {
+                resultSet.next();
+                this.portar.adresaUtilizatorProperty().set(resultSet.getString("adresaUtilizator"));
+                this.portar.parolaPRoperty().set(resultSet.getString("parola"));
+                this.portarLoginSuccessFlag=(true);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

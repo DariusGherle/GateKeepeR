@@ -35,10 +35,20 @@ public class LoginController implements Initializable {
     private void onLogin() {
         // Close the current stage (login window)
         Stage stage = (Stage) login_btn.getScene().getWindow();
-        Model.getInstance().getViewFactory().closeStage(stage);
 
         if(Model.getInstance().getViewFactory().getLoginAccountType()==AccountType.CLIENT) {
-            Model.getInstance().getViewFactory().showPortarWindow();
+            //evaluate gatekeeper login credentials
+            Model.getInstance().evaluatePortarCred(payee_adress_fld.getText(), password_fld.getText());
+            if(Model.getInstance().getPortarLoginSuccessFlag()) {
+                Model.getInstance().getViewFactory().showPortarWindow();
+                //close the login stage
+                Model.getInstance().getViewFactory().closeStage(stage);
+
+            } else {
+                payee_adress_fld.setText("");
+                password_fld.setText("");
+                error_lbl.setText("Utilizator sau Parola gresite!");
+            }
         } else if (Model.getInstance().getViewFactory().getLoginAccountType()==AccountType.ADMIN) {
             Model.getInstance().getViewFactory().showAdminWindow();
         } else {
