@@ -8,8 +8,8 @@ public class UtilizatorAutorizat {
     private final StringProperty parola;
 
     public UtilizatorAutorizat(StringProperty adresaUtilizator, StringProperty parola) {
-        this.adresaUtilizator = new SimpleStringProperty();
-        this.parola = new SimpleStringProperty();
+        this.adresaUtilizator = adresaUtilizator;
+        this.parola = parola;
     }
 
     public StringProperty adresaUtilizatorProperty() {

@@ -50,9 +50,27 @@ public class LoginController implements Initializable {
                 error_lbl.setText("Utilizator sau Parola gresite!");
             }
         } else if (Model.getInstance().getViewFactory().getLoginAccountType()==AccountType.ADMIN) {
-            Model.getInstance().getViewFactory().showAdminWindow();
+            Model.getInstance().evaluateAdminCred(payee_adress_fld.getText(), password_fld.getText());
+            if(Model.getInstance().getAdminLoginSuccessFlag()) {
+                Model.getInstance().getViewFactory().showAdminWindow();
+                //close login
+                Model.getInstance().getViewFactory().closeStage(stage);
+            } else {
+                payee_adress_fld.setText("");
+                password_fld.setText("");
+                error_lbl.setText("Utilizator sau Parola gresite!");
+            }
         } else {
-            Model.getInstance().getViewFactory().showUserWindow();
+            Model.getInstance().evaluateUtilCred(payee_adress_fld.getText(), password_fld.getText());
+            if(Model.getInstance().getUserAutorizatLoginSuccessFlag()) {
+                Model.getInstance().getViewFactory().showUserWindow();
+                //close login
+                Model.getInstance().getViewFactory().closeStage(stage);
+            } else {
+                payee_adress_fld.setText("");
+                password_fld.setText("");
+                error_lbl.setText("Utilizator sau Parola gresite!");
+            }
         }
 
     }

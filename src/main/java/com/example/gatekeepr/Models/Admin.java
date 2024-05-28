@@ -8,8 +8,8 @@ public class Admin {
     private final StringProperty parola;
 
     public Admin(StringProperty adresaAdmin, StringProperty parola) {
-        this.adresaAdmin = new SimpleStringProperty();
-        this.parola = new SimpleStringProperty();
+        this.adresaAdmin = adresaAdmin;
+        this.parola = parola;
     }
 
     public StringProperty adresaAdminProperty() {return adresaAdmin;}

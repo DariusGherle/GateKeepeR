@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="LocalDB" uuid="40167e6f-b208-4aae-9329-40ac311ca7a6">
-      <driver-ref>sqlite.xerial</driver-ref>
+    <data-source source="LOCAL" name="@database-ip.database.windows.net" uuid="8a35c73e-1532-4d33-95fd-cb2c08f0474b">
+      <driver-ref>azure.ms</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://database-ip.database.windows.net:1433</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
