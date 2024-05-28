@@ -67,6 +67,6 @@ public class AdminMenuController implements Initializable {
         //Show login Window
         Model.getInstance().getViewFactory().showLoginWindow();
         //Set Client Login success flag to false
-        //Model.getInstance().setClientLoginSuccessFlag(false);
+        Model.getInstance().setPortarLoginSuccessFlag(false);
     }
 }

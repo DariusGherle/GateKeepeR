@@ -37,7 +37,7 @@ public class ViewFactory {
 
 
     public ViewFactory() {
-        this.loginAccountType=AccountType.CLIENT;
+        this.loginAccountType=AccountType.PORTAR;
         this.clientSelectedMenuItem=new SimpleObjectProperty<>(ClientMenuOptions.STAREPOARTA);
         this.adminSelectedMenuItem=new SimpleObjectProperty<>(AdminMenuOptions.STAREPOARTA);
         this.userSelectedMenuItem=new SimpleObjectProperty<>(UserMenuOptions.DEPARTAMENT);

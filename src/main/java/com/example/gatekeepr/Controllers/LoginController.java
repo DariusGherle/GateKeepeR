@@ -3,7 +3,6 @@ package com.example.gatekeepr.Controllers;
 import com.example.gatekeepr.Models.Model;
 import com.example.gatekeepr.Views.AccountType;
 import javafx.collections.FXCollections;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -25,8 +24,9 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // Set the onLogin method to be called when the login button is pressed
-        acc_selector.setItems(FXCollections.observableArrayList(AccountType.CLIENT, AccountType.ADMIN, AccountType.USERAUTORIZAT));
+        acc_selector.setItems(FXCollections.observableArrayList(AccountType.PORTAR, AccountType.ADMIN, AccountType.USERAUTORIZAT));
         acc_selector.setValue(Model.getInstance().getViewFactory().getLoginAccountType());
+        acc_selector.valueProperty().addListener(observable -> setAcc_selector());
         acc_selector.valueProperty().addListener(observable -> Model.getInstance().getViewFactory().setLoginAccountType(acc_selector.getValue()));
         login_btn.setOnAction(actionEvent -> onLogin());
     }
@@ -36,7 +36,7 @@ public class LoginController implements Initializable {
         // Close the current stage (login window)
         Stage stage = (Stage) login_btn.getScene().getWindow();
 
-        if(Model.getInstance().getViewFactory().getLoginAccountType()==AccountType.CLIENT) {
+        if(Model.getInstance().getViewFactory().getLoginAccountType()==AccountType.PORTAR) {
             //evaluate gatekeeper login credentials
             Model.getInstance().evaluatePortarCred(payee_adress_fld.getText(), password_fld.getText());
             if(Model.getInstance().getPortarLoginSuccessFlag()) {
@@ -73,5 +73,18 @@ public class LoginController implements Initializable {
             }
         }
 
+    }
+
+    //Modificare window in functie de utilizator
+    private void setAcc_selector() {
+        Model.getInstance().getViewFactory().setLoginAccountType(acc_selector.getValue());
+        //Set label accordingly
+        if(acc_selector.getValue()==AccountType.ADMIN) {
+            payee_address_lbl.setText("Username:");
+        } else if(acc_selector.getValue()==AccountType.PORTAR){
+            payee_address_lbl.setText("Portar:");
+        } else {
+            payee_address_lbl.setText("Sef Departament:");
+        }
     }
 }

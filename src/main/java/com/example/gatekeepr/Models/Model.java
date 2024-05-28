@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 public class Model {
     private static Model model;
     private final ViewFactory viewFactory;
-    private AccountType loginAccountType = AccountType.CLIENT;
+    private AccountType loginAccountType = AccountType.PORTAR;
 
     //Client/Portar Data Section
     private Portar portar;

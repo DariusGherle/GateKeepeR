@@ -56,7 +56,7 @@
     <VBox layoutX="575.0" layoutY="82.0" prefHeight="724.0" prefWidth="240.0" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="40.0">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" />
         <TextField fx:id="aNume_fld1" />
-        <Button fx:id="aCreeazaAngajat_btn1" mnemonicParsing="false" text="Cauta Angajat" />
+        <Button fx:id="cautaAngajat_btn" mnemonicParsing="false" text="Cauta Angajat" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="error_lbl" text="Angajat gasit" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id Angajat" />
         <Text fx:id="sIdAngajat_lbl" strokeType="OUTSIDE" strokeWidth="0.0" text="Id Angajat" />
@@ -68,8 +68,7 @@
         <TextField fx:id="sNrMasina_fld" styleClass="payee_adress_lbl" />
         <CheckBox fx:id="sSchimbaProgramPoarta_box" mnemonicParsing="false" text="Schimba program poarta" />
         <ChoiceBox fx:id="sProgramLucu_choiceBox" prefWidth="150.0" styleClass="account_selector" />
-        <CheckBox fx:id="sNorma_box" mnemonicParsing="false" text="Schimba norma de ore:" />
-        <TextField fx:id="sNormaOre_fld" />
+        <CheckBox fx:id="sSuspendaAcces_box" mnemonicParsing="false" text="Suspenda Acces poarta" />
         <Button fx:id="modificaAngajat_btn" mnemonicParsing="false" text="Modifica Angajat" />
     </VBox>
    <Text layoutX="590.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifica Status Angajat:" />

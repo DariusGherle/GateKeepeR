@@ -51,7 +51,7 @@ public class UserMenuController implements Initializable {
         //Show login Window
         Model.getInstance().getViewFactory().showLoginWindow();
         //Set User Login success flag to false
-        //Model.getInstance().setClientLoginSuccessFlag(false);
+        Model.getInstance().setUtilizatorAutorizatSuccessFlag(false);
     }
 
 }

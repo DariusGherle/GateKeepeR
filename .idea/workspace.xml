@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c9358f5-e581-4fb6-be62-4eaf38843191" name="Changes" comment="Test 2024/05.03">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/MockDatabase/AdminDataMock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/MockDatabase/MockAdminResultSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/MockDatabase/MockUserResultSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/MockDatabase/UserDataMock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/Departamente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/IntervaleOrare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AdminMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AngajatNouController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AngajatNouController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/ClientMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/ClientMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Angajat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Angajat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/UtilizatorAutorizat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/UtilizatorAutorizat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/AccountType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AngajatNou.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AngajatNou.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +27,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="CSS File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -190,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716912284314</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test 2024/05.03">
+      <option name="closed" value="true" />
+      <created>1716921566492</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716921566492</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
