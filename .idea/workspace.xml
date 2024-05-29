@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c9358f5-e581-4fb6-be62-4eaf38843191" name="Changes" comment="Test 2024/05.03">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Database/RaportsGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/AccessLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/AccessLogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +139,7 @@
       <workItem from="1716934024555" duration="171000" />
       <workItem from="1716934463801" duration="109000" />
       <workItem from="1716934586673" duration="1790000" />
-      <workItem from="1716937261081" duration="4355000" />
+      <workItem from="1716937261081" duration="6438000" />
     </task>
     <task id="LOCAL-00001" summary="DADA">
       <option name="closed" value="true" />

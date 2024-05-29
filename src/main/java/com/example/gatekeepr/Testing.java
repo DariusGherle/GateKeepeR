@@ -24,11 +24,11 @@ public class Testing {
         //getAllDivisionsAttendanceReports();       // report pt toate diviziile precizata
        // getAttendanceReportByMarca(101);          // report pt marca precizata
 
-        System.out.println("\n");
+       /* System.out.println("\n");
         // Obține toate înregistrările access_logs ca un array de string-uri
         String[] logsArray = getAccessLogsAsStringArray();
         for (String log : logsArray) {
             System.out.println(log);
-        }   // chestia asta o bagi acolo intr-un listview sau cum e in javafx si bagi tot string-ul
+        }*/   // chestia asta o bagi acolo intr-un listview sau cum e in javafx si bagi tot string-ul
     }
 }
