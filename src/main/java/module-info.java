@@ -6,6 +6,8 @@ module com.example.gatekeepr {
     requires java.sql;
     requires org.xerial.sqlitejdbc;
 
+    opens com.example.gatekeepr.Controllers.Admin to javafx.fxml;
+    exports com.example.gatekeepr;
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
@@ -16,7 +18,6 @@ module com.example.gatekeepr {
     requires spring.context;
 
     opens com.example.gatekeepr to javafx.fxml;
-    exports com.example.gatekeepr;
     exports com.example.gatekeepr.Controllers;
     exports com.example.gatekeepr.Controllers.Admin;
     exports com.example.gatekeepr.Controllers.Portar;

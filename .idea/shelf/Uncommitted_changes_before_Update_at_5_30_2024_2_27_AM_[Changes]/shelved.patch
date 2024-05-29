@@ -1,0 +1,110 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6c9358f5-e581-4fb6-be62-4eaf38843191\" name=\"Changes\" comment=\"Test 2024/05.03\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AngajatNouController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AngajatNouController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/VizitatorCellController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/VizitatorCellController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/AdaugaVizController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/AdaugaVizController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Vizitator.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Vizitator.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/VizitatorCellFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/VizitatorCellFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/Fxml/Cells/VizitatorCell.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/Fxml/Cells/VizitatorCell.fxml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Enum\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;history&quot;: [\r\n    {\r\n      &quot;state&quot;: &quot;OPEN&quot;\r\n    }\r\n  ],\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"043240da-4e6b-4248-b760-bbf1475710f0\" />\r\n        <option name=\"url\" value=\"https://github.com/Dennis844/GateKeepeR\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2dr5UJfozwCIzuzWQzl89dZuKTd\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Edy/IdeaProjects/GateKeepeR\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"preferences.general\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"ChangesTree.GroupingKeys\": [\r\n      \"directory\",\r\n      \"module\"\r\n    ],\r\n    \"DatabaseDriversLRU\": [\r\n      \"sqlite\",\r\n      \"azure\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Edy\\IdeaProjects\\GateKeepeR\\GateKeepeR\\src\\main\\java\\com\\example\\gatekeepr\\Database\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\40754\\IdeaProjects\\GateKeepR\\src\\main\\resources\\Fxml\\Cells\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.example.gatekeepr.Controllers.Cells\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"App\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.gatekeepr.App\" />\r\n      <module name=\"TheApp\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6c9358f5-e581-4fb6-be62-4eaf38843191\" name=\"Changes\" comment=\"\" />\r\n      <created>1710753373008</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1710753373008</updated>\r\n      <workItem from=\"1710753374095\" duration=\"12376000\" />\r\n      <workItem from=\"1710788620595\" duration=\"898000\" />\r\n      <workItem from=\"1710840896433\" duration=\"8396000\" />\r\n      <workItem from=\"1710876969001\" duration=\"605000\" />\r\n      <workItem from=\"1711016488382\" duration=\"7708000\" />\r\n      <workItem from=\"1711037497652\" duration=\"4363000\" />\r\n      <workItem from=\"1711355043817\" duration=\"3889000\" />\r\n      <workItem from=\"1711444224741\" duration=\"13472000\" />\r\n      <workItem from=\"1711705767604\" duration=\"9390000\" />\r\n      <workItem from=\"1711728210818\" duration=\"1935000\" />\r\n      <workItem from=\"1711733317322\" duration=\"10944000\" />\r\n      <workItem from=\"1712763008024\" duration=\"5866000\" />\r\n      <workItem from=\"1712926099595\" duration=\"7195000\" />\r\n      <workItem from=\"1713898048437\" duration=\"599000\" />\r\n      <workItem from=\"1713979457466\" duration=\"5941000\" />\r\n      <workItem from=\"1714047283498\" duration=\"2750000\" />\r\n      <workItem from=\"1714714859446\" duration=\"14486000\" />\r\n      <workItem from=\"1716670367445\" duration=\"335000\" />\r\n      <workItem from=\"1716902743054\" duration=\"529000\" />\r\n      <workItem from=\"1716905317222\" duration=\"270000\" />\r\n      <workItem from=\"1716934024555\" duration=\"171000\" />\r\n      <workItem from=\"1716934463801\" duration=\"109000\" />\r\n      <workItem from=\"1716934586673\" duration=\"1790000\" />\r\n      <workItem from=\"1716937261081\" duration=\"7745000\" />\r\n      <workItem from=\"1717005741312\" duration=\"12358000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"DADA\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712831053144</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712831053144</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Test 2024/05.03\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1714769136337</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1714769136337</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Test 2024/05.03\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716238700410</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716238700410</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Test 2024/05.03\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716238741966</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716238741966</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Test 2024/05.03\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716911369196</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716911369196</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Test 2024/05.03\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716912284314</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716912284314</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Test 2024/05.03\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716921566492</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716921566492</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Test 2024/05.03\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717010170555</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717010170555</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"DADA\" />\r\n    <MESSAGE value=\"Test 2024/05.03\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Test 2024/05.03\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,14 +5,17 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="6c9358f5-e581-4fb6-be62-4eaf38843191" name="Changes" comment="Test 2024/05.03">
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a35c73e-1532-4d33-95fd-cb2c08f0474b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8a35c73e-1532-4d33-95fd-cb2c08f0474b.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_28_2024_5_13_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_28_2024_5_13_PM__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_28_2024_6_48_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_28_2024_6_48_PM__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2024_4_00_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2024_4_00_PM__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2024_4_10_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2024_4_10_PM__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2024_4_49_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_2024_4_49_PM__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AngajatNouController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/AngajatNouController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/VizitatorCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Cells/VizitatorCellController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/AdaugaVizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Portar/AdaugaVizController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Vizitator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Models/Vizitator.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Testing.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/VizitatorCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Views/VizitatorCellFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Cells/VizitatorCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Cells/VizitatorCell.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -61,38 +64,38 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "main",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "last_opened_file_path": "C:/Users/Edy/IdeaProjects/GateKeepeR",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "preferences.general",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/Edy/IdeaProjects/GateKeepeR&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   },
+-  "keyToStringList": {
+-    "ChangesTree.GroupingKeys": [
+-      "directory",
+-      "module"
++  &quot;keyToStringList&quot;: {
++    &quot;ChangesTree.GroupingKeys&quot;: [
++      &quot;directory&quot;,
++      &quot;module&quot;
+     ],
+-    "DatabaseDriversLRU": [
+-      "sqlite",
+-      "azure"
++    &quot;DatabaseDriversLRU&quot;: [
++      &quot;sqlite&quot;,
++      &quot;azure&quot;
+     ]
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\Edy\IdeaProjects\GateKeepeR\GateKeepeR\src\main\java\com\example\gatekeepr\Database" />
+@@ -146,6 +149,7 @@
+       <workItem from="1716934586673" duration="1790000" />
+       <workItem from="1716937261081" duration="7745000" />
+       <workItem from="1717005741312" duration="12358000" />
++      <workItem from="1717020562679" duration="3983000" />
+     </task>
+     <task id="LOCAL-00001" summary="DADA">
+       <option name="closed" value="true" />

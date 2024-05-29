@@ -1,0 +1,55 @@
+Index: src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.gatekeepr.Controllers.UserAutorizat;\r\n\r\nimport com.example.gatekeepr.Models.Model;\r\nimport com.example.gatekeepr.Views.UserMenuOptions;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.control.Button;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\n\r\npublic class UserMenuController implements Initializable {\r\n    public Button prezentaDepartament_btn;\r\n    public Button prezenta_btn;\r\n    public Button log_btn;\r\n    public Button adugaviz_btn;\r\n    public Button logout_btn;\r\n\r\n\r\n    @Override\r\n    public void initialize(URL url, ResourceBundle resourceBundle) {\r\n    addListeners();\r\n    }\r\n\r\n    private void addListeners() {\r\n        prezenta_btn.setOnAction(actionEvent -> onPrezenta());\r\n        prezentaDepartament_btn.setOnAction(actionEvent -> onDepartament());\r\n        log_btn.setOnAction(actionEvent -> onAccessLog());\r\n\r\n        //logout\r\n        logout_btn.setOnAction(actionEvent -> onLogout());\r\n    }\r\n\r\n    private  void onDepartament() {\r\n        Model.getInstance().getViewFactory().getUserSelectedMenuItem().set(UserMenuOptions.DEPARTAMENT);\r\n    }\r\n\r\n    private void onPrezenta() {\r\n        Model.getInstance().getViewFactory().getUserSelectedMenuItem().set(UserMenuOptions.PREZENTA);\r\n    }\r\n\r\n    private void onAccessLog() {\r\n        Model.getInstance().getViewFactory().getUserSelectedMenuItem().set(UserMenuOptions.ACCESSLOG);\r\n    }\r\n\r\n    private void onLogout() {\r\n        //get stage\r\n        Stage stage=(Stage) prezentaDepartament_btn.getScene().getWindow();\r\n        //Close the client window\r\n        Model.getInstance().getViewFactory().closeStage(stage);\r\n        //Show login Window\r\n        Model.getInstance().getViewFactory().showLoginWindow();\r\n        //Set User Login success flag to false\r\n        Model.getInstance().setUtilizatorAutorizatSuccessFlag(false);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java b/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java
+--- a/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java	
++++ b/src/main/java/com/example/gatekeepr/Controllers/UserAutorizat/UserMenuController.java	
+@@ -1,6 +1,7 @@
+ package com.example.gatekeepr.Controllers.UserAutorizat;
+ 
+ import com.example.gatekeepr.Models.Model;
++import com.example.gatekeepr.Views.AdminMenuOptions;
+ import com.example.gatekeepr.Views.UserMenuOptions;
+ import javafx.fxml.Initializable;
+ import javafx.scene.control.Button;
+@@ -26,6 +27,7 @@
+         prezenta_btn.setOnAction(actionEvent -> onPrezenta());
+         prezentaDepartament_btn.setOnAction(actionEvent -> onDepartament());
+         log_btn.setOnAction(actionEvent -> onAccessLog());
++        adugaviz_btn.setOnAction(actionEvent -> onAdaugaViz());
+ 
+         //logout
+         logout_btn.setOnAction(actionEvent -> onLogout());
+@@ -43,6 +45,10 @@
+         Model.getInstance().getViewFactory().getUserSelectedMenuItem().set(UserMenuOptions.ACCESSLOG);
+     }
+ 
++    private void onAdaugaViz() {
++        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminMenuOptions.ADAUGAVIZ);
++    }
++
+     private void onLogout() {
+         //get stage
+         Stage stage=(Stage) prezentaDepartament_btn.getScene().getWindow();
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"dataSourceStorageLocal\" created-in=\"IU-232.9921.47\">\r\n    <data-source name=\"@database-ip.database.windows.net\" uuid=\"8a35c73e-1532-4d33-95fd-cb2c08f0474b\">\r\n      <database-info product=\"Microsoft SQL Server\" version=\"12.00.5506\" jdbc-version=\"4.2\" driver-name=\"Microsoft JDBC Driver 12.2 for SQL Server\" driver-version=\"12.2.0.0\" dbms=\"AZURE\" exact-version=\"12.0.5506\" exact-driver-version=\"12.2\">\r\n        <extra-name-characters>$#@</extra-name-characters>\r\n        <identifier-quote-string>&quot;</identifier-quote-string>\r\n      </database-info>\r\n      <case-sensitivity plain-identifiers=\"mixed\" quoted-identifiers=\"mixed\" />\r\n      <secret-storage>master_key</secret-storage>\r\n      <user-name>database-IP</user-name>\r\n      <schema-mapping>\r\n        <introspection-scope>\r\n          <node negative=\"1\">\r\n            <node kind=\"database\" qname=\"@\">\r\n              <node kind=\"schema\" qname=\"@\" />\r\n            </node>\r\n            <node kind=\"database\" qname=\"database-IP\">\r\n              <node kind=\"schema\" qname=\"dbo\" />\r\n            </node>\r\n          </node>\r\n        </introspection-scope>\r\n      </schema-mapping>\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+--- a/.idea/dataSources.local.xml	
++++ b/.idea/dataSources.local.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="dataSourceStorageLocal" created-in="IU-232.9921.47">
++  <component name="dataSourceStorageLocal" created-in="IU-232.10072.27">
+     <data-source name="@database-ip.database.windows.net" uuid="8a35c73e-1532-4d33-95fd-cb2c08f0474b">
+       <database-info product="Microsoft SQL Server" version="12.00.5506" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 12.2 for SQL Server" driver-version="12.2.0.0" dbms="AZURE" exact-version="12.0.5506" exact-driver-version="12.2">
+         <extra-name-characters>$#@</extra-name-characters>

@@ -1,6 +1,7 @@
 package com.example.gatekeepr.Controllers.UserAutorizat;
 
 import com.example.gatekeepr.Models.Model;
+import com.example.gatekeepr.Views.AdminMenuOptions;
 import com.example.gatekeepr.Views.UserMenuOptions;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -26,6 +27,7 @@ public class UserMenuController implements Initializable {
         prezenta_btn.setOnAction(actionEvent -> onPrezenta());
         prezentaDepartament_btn.setOnAction(actionEvent -> onDepartament());
         log_btn.setOnAction(actionEvent -> onAccessLog());
+        adugaviz_btn.setOnAction(actionEvent -> onAdaugaViz());
 
         //logout
         logout_btn.setOnAction(actionEvent -> onLogout());
@@ -41,6 +43,10 @@ public class UserMenuController implements Initializable {
 
     private void onAccessLog() {
         Model.getInstance().getViewFactory().getUserSelectedMenuItem().set(UserMenuOptions.ACCESSLOG);
+    }
+
+    private void onAdaugaViz() {
+        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminMenuOptions.ADAUGAVIZ);
     }
 
     private void onLogout() {
