@@ -150,22 +150,31 @@ public class Model {
         this.utilizatorAutorizatSuccessFlag = flag;
     }
 
+    // verifica doar daca sef utilizator e pe 1
     public void evaluateUtilCred(String adresaUtil, String parola) {
         System.out.println("Evaluating credentials for authorized user: " + adresaUtil);
-        String query = "SELECT adresa_utilizator, parola FROM employees WHERE adresa_utilizator = ? AND parola = ?";
+
+        // Check if the password is "12345"
+        if (!"12345".equals(parola)) {
+            System.out.println("Authorized user credentials are incorrect.");
+            this.utilizatorAutorizatSuccessFlag = false;
+            return;
+        }
+
+        // Query to check if the adresa_utilizator exists in the employees table
+        String query = "SELECT marca FROM employees WHERE marca = ? AND este_sef = 1";
 
         try (Connection connection = DriverManager.getConnection(CONNECTION_URL, USER, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(query)) {
 
             preparedStatement.setString(1, adresaUtil);
-            preparedStatement.setString(2, parola);
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 if (resultSet.next()) {
                     System.out.println("Authorized user credentials are correct.");
                     this.utilizatorAutorizat = new UtilizatorAutorizat(
-                            new SimpleStringProperty(resultSet.getString("adresa_utilizator")),
-                            new SimpleStringProperty(resultSet.getString("parola"))
+                            new SimpleStringProperty(adresaUtil),
+                            new SimpleStringProperty(parola)
                     );
                     this.utilizatorAutorizatSuccessFlag = true;
                 } else {
@@ -178,6 +187,7 @@ public class Model {
             this.utilizatorAutorizatSuccessFlag = false;
         }
     }
+
 
     // Define Portar, Admin, and UtilizatorAutorizat classes (simplified example)
     public class Portar {
