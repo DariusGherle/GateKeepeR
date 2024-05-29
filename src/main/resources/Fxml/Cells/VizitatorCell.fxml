@@ -4,20 +4,20 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 
-<AnchorPane prefHeight="60.0" prefWidth="500.0" styleClass="cell_container" stylesheets="@../../Styles/AccessCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Cells.VizitatorCellController">
-    <Label fx:id="access_date_lbl" layoutX="99.0" layoutY="13.0" styleClass="trans_date_lbl" text="2023-07-08" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0" />
-    <Label fx:id="nume_lbl" layoutX="183.0" layoutY="21.0" styleClass="trans_pAdress_lbl" text="Denis Lazau" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="21.0" />
-    <Line endY="20.0" layoutX="275.0" layoutY="21.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="22.0" />
-    <Label fx:id="carePoarta_lbl" layoutX="318.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="Poarta" AnchorPane.leftAnchor="318.0" AnchorPane.topAnchor="13.0" />
-    <Label fx:id="access_time_lbl" layoutX="99.0" layoutY="31.0" styleClass="trans_date_lbl" text="13:52" AnchorPane.leftAnchor="14.0" />
-    <Label fx:id="nrMasina_lbl" layoutX="318.0" layoutY="29.0" styleClass="trans_pAdress_lbl" text="NR_MAsina" AnchorPane.bottomAnchor="13.0" />
-   <Label fx:id="CNP_lbl" layoutX="180.0" layoutY="21.0" styleClass="trans_pAdress_lbl" text="5021340027568" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="200.0" />
-   <Button fx:id="plecare_btn" layoutX="412.0" layoutY="17.0" mnemonicParsing="false" styleClass="delete_btn" text="Plecare">
-      <graphic>
-         <FontAwesomeIconView glyphName="WINDOW_CLOSE_ALT" size="15" />
-      </graphic>
-   </Button>
-   <Label layoutX="200.0" layoutY="8.0" styleClass="trans_pAdress_lbl" text="CNP:" AnchorPane.topAnchor="13.0" />
+<AnchorPane prefHeight="75.0" prefWidth="497.0" styleClass="cell_container" stylesheets="@../../Styles/AccessCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" >
+    <Label fx:id="data_ora_intrare" layoutX="99.0" layoutY="13.0" styleClass="trans_date_lbl" text="2023-07-08" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.0" />
+    <Label fx:id="nume_lbl" layoutX="13.0" layoutY="49.0" styleClass="trans_pAdress_lbl" text="Denis Lazau" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="49.0" />
+    <Label layoutX="131.0" layoutY="31.0" styleClass="trans_pAdress_lbl" text="Motiv vizita:" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="31.0" />
+    <Label fx:id="data_ora_iesire" layoutX="99.0" layoutY="31.0" styleClass="trans_date_lbl" text="2023-07-08 13:52" AnchorPane.leftAnchor="14.0" />
+    <Label fx:id="motivVizita_lbl" layoutX="212.0" layoutY="31.0" styleClass="trans_pAdress_lbl" text="motiVizita" AnchorPane.bottomAnchor="26.4" />
+    <Label fx:id="CNP_lbl" layoutX="166.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="5021340027568" AnchorPane.bottomAnchor="44.4" AnchorPane.leftAnchor="166.0" />
+    <Button fx:id="plecare_btn" layoutX="402.0" layoutY="27.0" mnemonicParsing="false" styleClass="delete_btn" text="Plecare">
+        <graphic>
+            <FontAwesomeIconView glyphName="WINDOW_CLOSE_ALT" size="15" />
+        </graphic>
+    </Button>
+    <Label layoutX="131.0" layoutY="13.0" styleClass="trans_pAdress_lbl" text="CNP:" AnchorPane.topAnchor="13.0" />
+    <Label layoutX="131.0" layoutY="49.0" styleClass="trans_pAdress_lbl" text="Gardian:" />
+    <Label fx:id="gardian_lbl" layoutX="188.0" layoutY="49.0" styleClass="trans_pAdress_lbl" text="Gardian" />
 </AnchorPane>

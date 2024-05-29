@@ -1,62 +1,37 @@
 package com.example.gatekeepr.Models;
 
-import javafx.beans.property.*;
-import java.time.LocalDate;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
+
+import java.sql.Date;
+import java.time.LocalDateTime;
 
 public class Vizitator {
     private final StringProperty nume;
-    private final ObjectProperty<LocalDate> data;
-    private final StringProperty ora;
-    private final StringProperty carePoarta;
-    private final StringProperty nrMasina;
+    private final StringProperty prenume;
+    private final StringProperty cnp;
+    private final StringProperty scopVizita;
+    private final StringProperty portar;
+    private final ObjectProperty<Date> dataOraIntrare;
+    private final ObjectProperty<Date> dataOraIesire;
 
-    public Vizitator(String nume, LocalDate data, String ora, String carePoarta, String nrMasina) {
-        this.nume = new SimpleStringProperty(this, "nume", nume);
-        this.data = new SimpleObjectProperty<>(this, "data", data);
-        this.ora = new SimpleStringProperty(this, "ora", ora);
-        this.carePoarta = new SimpleStringProperty(this, "carePoarta", carePoarta);
-        this.nrMasina = new SimpleStringProperty(this, "nrMasina", nrMasina);
+    public Vizitator(String nume, String prenume, String cnp, String scopVizita, String portar, Date dataOraIntrare, Date dataOraIesire) {
+        this.nume = new SimpleStringProperty(nume);
+        this.prenume = new SimpleStringProperty(prenume);
+        this.cnp = new SimpleStringProperty(cnp);
+        this.scopVizita = new SimpleStringProperty(scopVizita);
+        this.portar = new SimpleStringProperty(portar);
+        this.dataOraIntrare = new SimpleObjectProperty<>(dataOraIntrare);
+        this.dataOraIesire = new SimpleObjectProperty<>(dataOraIesire);
     }
 
-    // Getter methods
-    public String getNume() {
-        return nume.get();
-    }
-
-    public LocalDate getData() {
-        return data.get();
-    }
-
-    public String getOra() {
-        return ora.get();
-    }
-
-    public String getCarePoarta() {
-        return carePoarta.get();
-    }
-
-    public String getNrMasina() {
-        return nrMasina.get();
-    }
-
-    // Property methods
-    public StringProperty numeProperty() {
-        return nume;
-    }
-
-    public ObjectProperty<LocalDate> dataProperty() {
-        return data;
-    }
-
-    public StringProperty oraProperty() {
-        return ora;
-    }
-
-    public StringProperty carePoartaProperty() {
-        return carePoarta;
-    }
-
-    public StringProperty nrMasinaProperty() {
-        return nrMasina;
-    }
+    public StringProperty numeProperty() { return nume; }
+    public StringProperty prenumeProperty() { return prenume; }
+    public StringProperty cnpProperty() { return cnp; }
+    public StringProperty scopVizitaProperty() { return scopVizita; }
+    public StringProperty portarProperty() { return portar; }
+    public ObjectProperty<Date> dataOraIntrareProperty() { return dataOraIntrare; }
+    public ObjectProperty<Date> dataOraIesireProperty() { return dataOraIesire; }
 }
