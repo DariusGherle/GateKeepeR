@@ -20,6 +20,8 @@ public class LoginController implements Initializable {
     public TextField password_fld;
     public Button login_btn;
     public Label error_lbl;
+    public static String guestPortarName;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -40,6 +42,7 @@ public class LoginController implements Initializable {
             //evaluate gatekeeper login credentials
             Model.getInstance().evaluatePortarCred(payee_adress_fld.getText(), password_fld.getText());
             if(Model.getInstance().getPortarLoginSuccessFlag()) {
+                guestPortarName=payee_adress_fld.getText();
                 Model.getInstance().getViewFactory().showPortarWindow();
                 //close the login stage
                 Model.getInstance().getViewFactory().closeStage(stage);
@@ -52,6 +55,7 @@ public class LoginController implements Initializable {
         } else if (Model.getInstance().getViewFactory().getLoginAccountType()==AccountType.ADMIN) {
             Model.getInstance().evaluateAdminCred(payee_adress_fld.getText(), password_fld.getText());
             if(Model.getInstance().getAdminLoginSuccessFlag()) {
+                guestPortarName=payee_adress_fld.getText();
                 Model.getInstance().getViewFactory().showAdminWindow();
                 //close login
                 Model.getInstance().getViewFactory().closeStage(stage);
@@ -63,6 +67,8 @@ public class LoginController implements Initializable {
         } else {
             Model.getInstance().evaluateUtilCred(payee_adress_fld.getText(), password_fld.getText());
             if(Model.getInstance().getUserAutorizatLoginSuccessFlag()) {
+                guestPortarName=payee_adress_fld.getText();
+
                 Model.getInstance().getViewFactory().showUserWindow();
                 //close login
                 Model.getInstance().getViewFactory().closeStage(stage);

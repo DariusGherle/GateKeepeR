@@ -1,39 +1,40 @@
 package com.example.gatekeepr.Models;
 
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Prezenta {
     private final StringProperty nume;
     private final StringProperty prenume;
-    private final StringProperty CNP;
-    private final StringProperty numar;
-    private final ObjectProperty<LocalDate> data;
-    private final ObjectProperty<LocalDateTime> ora;
+    private final StringProperty marca;
+    private final StringProperty departament;
+    private final StringProperty procentajPrezenta;
 
-    public Prezenta(StringProperty nume, StringProperty prenume, StringProperty CNP, StringProperty numar, ObjectProperty<LocalDate> data, ObjectProperty<LocalDateTime> ora) {
-        this.nume = new SimpleStringProperty();
-        this.prenume = new SimpleStringProperty();
-        this.CNP = new SimpleStringProperty();
-        this.numar = new SimpleStringProperty();
-        this.data = new SimpleObjectProperty<>();
-        this.ora = new SimpleObjectProperty<>();
+    public Prezenta(StringProperty nume, StringProperty prenume, StringProperty marca, StringProperty departament, StringProperty procentajPrezenta) {
+        this.nume = nume;
+        this.prenume = prenume;
+        this.marca = marca;
+        this.departament = departament;
+        this.procentajPrezenta = procentajPrezenta;
     }
 
-    public StringProperty numeProperty() {return this.nume;}
+    public StringProperty numeProperty() {
+        return nume;
+    }
 
-    public StringProperty prenumeProperty() {return this.prenume;}
+    public StringProperty prenumeProperty() {
+        return prenume;
+    }
 
-    public StringProperty cnpProperty() {return this.CNP;}
+    public StringProperty marcaProperty() {
+        return marca;
+    }
 
-    public StringProperty numarProperty() {return this.numar;}
+    public StringProperty departamentProperty() {
+        return departament;
+    }
 
-    public ObjectProperty<LocalDate> dataPropery() {return this.data;}
-
-    public ObjectProperty<LocalDateTime> oraPropery() {return this.ora;}
+    public StringProperty procentajPrezentaProperty() {
+        return procentajPrezenta;
+    }
 }

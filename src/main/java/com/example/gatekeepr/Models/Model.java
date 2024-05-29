@@ -200,6 +200,18 @@ public class Model {
         }
 
         // Getter and setter methods
+
+        public String getAdresaUtilizator() {
+            return adresaUtilizator.get();
+        }
+
+        public SimpleStringProperty adresaUtilizatorProperty() {
+            return adresaUtilizator;
+        }
+
+        public void setAdresaUtilizator(String adresaUtilizator) {
+            this.adresaUtilizator.set(adresaUtilizator);
+        }
     }
 
     public class Admin {
@@ -211,7 +223,18 @@ public class Model {
             this.parola = parola;
         }
 
-        // Getter and setter methods
+        public String getAdresaUtilizator() {
+            return adresaUtilizator.get();
+        }
+
+        public SimpleStringProperty adresaUtilizatorProperty() {
+            return adresaUtilizator;
+        }
+
+        public void setAdresaUtilizator(String adresaUtilizator) {
+            this.adresaUtilizator.set(adresaUtilizator);
+        }
+// Getter and setter methods
     }
 
     public class UtilizatorAutorizat {
@@ -223,6 +246,17 @@ public class Model {
             this.parola = parola;
         }
 
+        public String getAdresaUtilizator() {
+            return adresaUtilizator.get();
+        }
+
+        public SimpleStringProperty adresaUtilizatorProperty() {
+            return adresaUtilizator;
+        }
+
+        public void setAdresaUtilizator(String adresaUtilizator) {
+            this.adresaUtilizator.set(adresaUtilizator);
+        }
         // Getter and setter methods
     }
 }
