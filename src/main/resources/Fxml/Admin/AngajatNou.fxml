@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="adauga_angajat_container" stylesheets="@../../Styles/AdaugaAng.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Admin.AngajatNouController">
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="adauga_angajat_container" stylesheets="@../../Styles/AdaugaAng.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Admin.AngajatNouController">
     <Text layoutX="83.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aduaga un angajat nou" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
     <VBox fillWidth="false" layoutX="14.0" layoutY="31.0" prefHeight="724.0" prefWidth="275.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" />
@@ -35,20 +30,8 @@
     <VBox fillWidth="false" layoutX="24.0" layoutY="41.0" prefHeight="724.0" prefWidth="275.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="40.0">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" />
         <TextField fx:id="pNume_fld" />
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id Angajat" />
-        <TextField fx:id="pID_fld" />
         <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parola:" />
         <TextField fx:id="pParola_fld" />
-        <Text layoutX="10.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acces Auto:" />
-        <CheckBox fx:id="pAccesAuto_box" mnemonicParsing="false" />
-        <TextField fx:id="pNrMasina_fld" styleClass="payee_adress_lbl" />
-        <Text layoutX="10.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts:" />
-        <CheckBox fx:id="pTura_box" layoutX="10.0" layoutY="157.0" mnemonicParsing="false" text="Selecteaza tura:" />
-        <ChoiceBox fx:id="pTura_choiceBox" prefWidth="150.0" styleClass="account_selector" />
-        <Text layoutX="10.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Norma:" />
-        <CheckBox fx:id="pNorma_box" layoutX="10.0" layoutY="208.0" mnemonicParsing="false" text="Adauga norma de ore:" />
-        <Text layoutX="10.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numarul de ore:" />
-        <TextField fx:id="pNormaOre_fld" layoutX="10.0" layoutY="245.0" />
         <Button fx:id="pCreeazaPortar_btn" mnemonicParsing="false" text="Creeaza Portar Nou" />
         <Label fx:id="error_lbl1" layoutX="10.0" layoutY="172.0" styleClass="error_lbl" />
     </VBox>

@@ -10,16 +10,15 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
 import static java.lang.Boolean.TRUE;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 class DatabaseHelper {
     private static final String CONNECTION_URL = "jdbc:sqlserver://database-IP.database.windows.net:1433;"
@@ -82,13 +81,8 @@ public class AngajatNouController implements Initializable {
     public Button cautaAngajat_btn;
     public CheckBox sSuspendaAcces_box;
 
-    private List<Angajat> listaAngajati;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Initialize the list of employees
-        listaAngajati = new ArrayList<>();
-
         // Set items for choice boxes
         aProgramPoarta_choiceBox.setItems(FXCollections.observableArrayList(IntervaleOrare.INC00SF08, IntervaleOrare.INC08SF16, IntervaleOrare.INC16SF24));
         aDepartament_choiceBox.setItems(FXCollections.observableArrayList(Departamente.URGENTE, Departamente.GENERAL));
@@ -144,93 +138,50 @@ public class AngajatNouController implements Initializable {
 
     private void createAngajat() {
         try {
-            // Verifică dacă toate câmpurile necesare sunt completate
-            if (aID_fld.getText().isEmpty() || aNume_fld.getText().isEmpty() || aParola_fld.getText().isEmpty() || aNormaOre_fld.getText().isEmpty() || aProgramPoarta_choiceBox.getValue() == null) {
+            // Verify that all required fields are filled
+            if (aID_fld.getText().isEmpty() || aNume_fld.getText().isEmpty() || aParola_fld.getText().isEmpty() || aNormaOre_fld.getText().isEmpty() || aDepartament_choiceBox.getValue() == null) {
                 error_lbl.setText("Toate câmpurile marcate sunt obligatorii.");
                 return;
             }
 
-            // Colectarea datelor din câmpurile de input
-            String marca = aID_fld.getText();
+            // Collect data from input fields
+            int marca = Integer.parseInt(aID_fld.getText());
             String nume = aNume_fld.getText();
             String prenume = aNume_fld1.getText();
             String cnp = aParola_fld.getText();
-            String poarta = aProgramPoarta_choiceBox.getValue().toString();
             String poza = ""; // Poza poate fi selectată dintr-un fișier sau altă sursă, dar aici o lăsăm goală
-            String codSecuritateBluetooth = ""; // Asumăm că este gol pentru acum
-            String codSecuritateDispozitiv = ""; // Asumăm că este gol pentru acum
+            String codSecuritateBluetooth = ""; // Assumed to be empty for now
+            String codSecuritateDispozitiv = ""; // Assumed to be empty for now
             boolean accesPoarta = TRUE;
-            boolean accesBariera = aAccesAuto_box.isSelected(); // Folosim checkbox-ul pAccesAuto_box pentru acces la barieră
+            boolean accesBariera = aAccesAuto_box.isSelected();
             String numarAuto = aNrMasina_fld.getText();
             boolean esteSef = sSefDepartament_box.isSelected();
-            Departamente departament = aDepartament_choiceBox.getValue();
+            int divizie = aDepartament_choiceBox.getValue().ordinal();
             int intervaleOrareAcces = Integer.parseInt(aNormaOre_fld.getText());
 
-            // Crearea unui nou angajat
-            Angajat angajat = new Angajat(
-                    new SimpleStringProperty(marca),
-                    new SimpleStringProperty(nume),
-                    new SimpleStringProperty(prenume),
-                    new SimpleStringProperty(cnp),
-                    new SimpleStringProperty(poarta),
-                    poza,
-                    codSecuritateBluetooth,
-                    codSecuritateDispozitiv,
-                    accesPoarta,
-                    accesBariera,
-                    new SimpleStringProperty(numarAuto),
-                    esteSef,
-                    departament.ordinal(),
-                    intervaleOrareAcces
-            );
+            // Insert the employee into the database
+            String query = "INSERT INTO employees (marca, divizie, nume, prenume, cnp, poza, cod_securitate_bluetooth, cod_securitate_dispozitiv, intervale_orare_access, acces_poarta, acces_bariera, numar_auto, este_sef) " +
+                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            int rowsAffected = DatabaseHelper.executeUpdate(query, marca, divizie, nume, prenume, cnp, poza, codSecuritateBluetooth, codSecuritateDispozitiv, intervaleOrareAcces, accesPoarta ? 1 : 0, accesBariera ? 1 : 0, numarAuto, esteSef ? 1 : 0);
 
-            // Adăugarea angajatului în lista de angajați
-            listaAngajati.add(angajat);
-            System.out.println("Angajat adaugat cu succes!");
-            // Resetarea câmpurilor la starea inițială
-            emptyFields();
-            error_lbl.setText("Angajat creat cu succes!");
-        } catch (Exception e) {
-            error_lbl.setText("Eroare la crearea angajatului. Verificați datele introduse.");
+            if (rowsAffected > 0) {
+                showAlert(Alert.AlertType.INFORMATION, "Success", "Angajat adăugat cu succes.");
+                emptyFields();
+            }
+        } catch (SQLException e) {
             e.printStackTrace();
+            showAlert(Alert.AlertType.ERROR, "Error", "A apărut o eroare la adăugarea angajatului.");
         }
     }
 
+    private void showAlert(Alert.AlertType alertType, String title, String content) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setContentText(content);
+        alert.showAndWait();
+    }
+
     private void cautaAngajat() {
-        try {
-            // Verifică dacă numele pentru căutare este introdus
-            if (aNume_fld1.getText().isEmpty()) {
-                error_lbl1.setText("Introduceți numele angajatului pentru căutare.");
-                return;
-            }
-
-            // Căutarea angajatului în listă după nume
-            String numeCautat = aNume_fld1.getText();
-            Angajat angajatGasit = null;
-
-            for (Angajat angajat : listaAngajati) {
-                if (angajat.getNume().equals(numeCautat)) {
-                    angajatGasit = angajat;
-                    break;
-                }
-            }
-
-            if (angajatGasit == null) {
-                error_lbl1.setText("Angajatul nu a fost găsit.");
-                return;
-            }
-
-            // Afișarea detaliilor angajatului găsit
-            sIdAngajat_lbl.setText(angajatGasit.getMarca());
-            sDepartament_lbl.setText(angajatGasit.getDepartament() == 0 ? "URGENTE" : "GENERAL");
-            sSefDepartament_box.setSelected(angajatGasit.isEste_sef());
-            sAdaugaAccesAuto_box.setSelected(angajatGasit.isAcces_poarta());
-            sNrMasina_fld.setText(angajatGasit.getNumar_auto());
-
-            error_lbl1.setText("Angajat găsit.");
-        } catch (Exception e) {
-            error_lbl1.setText("Eroare la căutarea angajatului.");
-            e.printStackTrace();
-        }
+        // Implement the search functionality
     }
 }
