@@ -24,11 +24,27 @@ public class AccessCellController implements Initializable {
     private  final Access access;
 
     public AccessCellController(Access access){
-        this.access=access;
+        this.access = access;
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        // Leagă proprietățile accesului la etichetele din interfață
+        nume_lbl.textProperty().bind(access.numeProperty());
+        access_date_lbl.textProperty().bind(access.datePropery());
+        access_time_lbl.textProperty().bind(access.oraProperty());
+        carePoarta_lbl.textProperty().bind(access.carePoartaProperty());
+        nrMasina_lbl.textProperty().bind(access.nrMasinaSauIdProperty());
 
+        // Statusul bazat pe tipul accesului (Entry/Exit)
+        if (access.carePoartaProperty().get().equals("Entry")) {
+            status_lbl.setText("Intrare");
+            in_icon.setVisible(true);
+            out_icon.setVisible(false);
+        } else {
+            status_lbl.setText("Iesire");
+            in_icon.setVisible(false);
+            out_icon.setVisible(true);
+        }
     }
 }

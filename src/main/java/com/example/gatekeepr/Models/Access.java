@@ -9,14 +9,14 @@ import java.time.LocalDate;
 
 public class Access {
     private final StringProperty nume;
-    private final ObjectProperty<LocalDate> data;
+    private final StringProperty data;
     private final StringProperty ora;
     private final StringProperty carePoarta;
     private final StringProperty nrMasina_ID;
 
-    public Access(String nume, LocalDate data, String ora, String carePoarta, String nrMasina_ID) {
+    public Access(String nume, String data, String ora, String carePoarta, String nrMasina_ID) {
         this.nume = new SimpleStringProperty(this, "Nume", nume);
-        this.data = new SimpleObjectProperty<LocalDate>(this, "Data", data);
+        this.data = new SimpleStringProperty(this, "Data", data);
         this.ora = new SimpleStringProperty(this, "Ora", ora);
         this.carePoarta = new SimpleStringProperty(this, "CarePoarta", carePoarta);
         this.nrMasina_ID = new SimpleStringProperty(this, "nrMasinaSauID", nrMasina_ID);
@@ -28,7 +28,7 @@ public class Access {
 
     public StringProperty carePoartaProperty() {return this.carePoarta;}
 
-    public ObjectProperty<LocalDate> datePropery() {return this.data;}
+    public StringProperty datePropery() {return this.data;}
 
     public StringProperty nrMasinaSauIdProperty() {return this.nrMasina_ID;}
 }
