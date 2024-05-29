@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c9358f5-e581-4fb6-be62-4eaf38843191" name="Changes" comment="Test 2024/05.03">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/Division.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a35c73e-1532-4d33-95fd-cb2c08f0474b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8a35c73e-1532-4d33-95fd-cb2c08f0474b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/PrezentaAController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gatekeepr/Controllers/Admin/PrezentaAController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/PrezentaA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/PrezentaA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Client/AdaugaViz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Client/AdaugaViz.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +138,7 @@
       <workItem from="1716934463801" duration="109000" />
       <workItem from="1716934586673" duration="1790000" />
       <workItem from="1716937261081" duration="7745000" />
-      <workItem from="1717005741312" duration="3521000" />
+      <workItem from="1717005741312" duration="3831000" />
     </task>
     <task id="LOCAL-00001" summary="DADA">
       <option name="closed" value="true" />

@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Text?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/AdaugaViz.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Portar.AdaugaVizController">
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/AdaugaViz.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gatekeepr.Controllers.Portar.AdaugaVizController">
     <SplitPane dividerPositions="0.35131950989632416" layoutX="149.0" layoutY="161.0" prefHeight="750.0" prefWidth="850.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="295.0">
             <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="280.0" styleClass="new_trans_container" AnchorPane.bottomAnchor="314.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
@@ -36,21 +29,17 @@
             <VBox layoutX="96.0" layoutY="91.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
                 <HBox prefHeight="80.0" prefWidth="200.0" styleClass="accounts_view">
                     <VBox prefHeight="200.0" prefWidth="250.0" styleClass="new_trans_container">
-                        <Button fx:id="modificaViz_btn" mnemonicParsing="false" text="Modifica Vizitator Selectat" />
-                        <Button fx:id="incheieViz_btn" minWidth="0.0" mnemonicParsing="false" text="Incheie Vizita">
-                            <graphic>
-                                <FontAwesomeIconView fill="WHITE" glyphName="MINUS" size="20" />
-                            </graphic>
-                        </Button>
-                    </VBox>
-                    <VBox prefHeight="200.0" prefWidth="250.0" styleClass="new_trans_container">
-                        <Label text="Nume Vizitator:" />
-                        <TextField fx:id="cautaNume_fld" />
-                        <Button fx:id="cautaViz_btn" mnemonicParsing="false" text="Cauta">
-                            <graphic>
-                                <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20" />
-                            </graphic>
-                        </Button>
+                  <children>
+                          <VBox prefHeight="200.0" prefWidth="250.0" styleClass="new_trans_container">
+                              <Label text="Nume Vizitator:" />
+                              <TextField fx:id="cautaNume_fld" />
+                              <Button fx:id="cautaViz_btn" mnemonicParsing="false" text="Cauta">
+                                  <graphic>
+                                      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20" />
+                                  </graphic>
+                              </Button>
+                          </VBox>
+                  </children>
                     </VBox>
                 </HBox>
                 <ListView fx:id="listaViz_listview" prefHeight="560.0" prefWidth="533.0" styleClass="accessLog_listview" />
