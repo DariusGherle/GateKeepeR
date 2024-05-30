@@ -1,15 +1,30 @@
 package com.example.gatekeepr.Controllers.Portar;
 
+import com.example.gatekeepr.Controllers.Cells.AccessCellController;
+import com.example.gatekeepr.Models.Access;
+import com.example.gatekeepr.Database.AccessLogsDB;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListCell;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
+import javafx.util.Callback;
+import javafx.util.Duration;
 
+import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class StarePoartaController implements Initializable {
@@ -33,10 +48,53 @@ public class StarePoartaController implements Initializable {
     public ImageView pozacautare_img;
     public Text numeutil_lbl;
     public Label date_lbl;
+    public ListView<Access> ultimeleactiuni_listview;
+
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        // Create a Timeline to update the date_lbl every second
+        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> updateDateTime()));
+        timeline.setCycleCount(Timeline.INDEFINITE); // Repeat indefinitely
+        timeline.play(); // Start the timeline
 
+        // Fetch the last 5 access logs and populate the ListView
+        List<Access> accessLogs = AccessLogsDB.getLast5AccessLogs();
+        ultimeleactiuni_listview.setItems(FXCollections.observableArrayList(accessLogs));
+        ultimeleactiuni_listview.setCellFactory(new Callback<ListView<Access>, ListCell<Access>>() {
+            @Override
+            public ListCell<Access> call(ListView<Access> param) {
+                return new ListCell<Access>() {
+                    @Override
+                    protected void updateItem(Access item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (empty || item == null) {
+                            setText(null);
+                            setGraphic(null);
+                        } else {
+                            try {
+                                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Cells/AccessCell.fxml"));
+                                AccessCellController controller = new AccessCellController(item);
+                                loader.setController(controller);
+                                setGraphic(loader.load());
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                };
+            }
+        });
+    }
+
+    private void updateDateTime() {
+        // Get the current date and time
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        // Format the date and time
+        String formattedDateTime = currentDateTime.format(formatter);
+        // Set the formatted date and time to date_lbl
+        date_lbl.setText(formattedDateTime);
     }
 
     public void iesirenonvalida_btn(ActionEvent actionEvent) {

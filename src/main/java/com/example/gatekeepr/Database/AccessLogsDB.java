@@ -1,6 +1,8 @@
 package com.example.gatekeepr.Database;
 
+import com.example.gatekeepr.Models.Access;
 import java.sql.*;
+import java.util.List;
 
 public class AccessLogsDB {
     private static final String CONNECTION_URL = "jdbc:sqlserver://database-IP.database.windows.net:1433;database=database-IP;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
@@ -50,6 +52,11 @@ public class AccessLogsDB {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static List<Access> getLast5AccessLogs() {
+        List<Access> allLogs = RaportsGenerator.getAllDivisionsAttendanceReports();
+        return allLogs.subList(Math.max(allLogs.size() - 5, 0), allLogs.size());
     }
 
     public static void delete(int id) {

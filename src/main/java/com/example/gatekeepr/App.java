@@ -8,11 +8,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.sql.*;
+
+
 public class App extends Application {
 
     @Override
     public void start(Stage stage) {
         SchemaInitializer.initializeDatabase();
         Model.getInstance().getViewFactory().showLoginWindow();
+
+
     }
 }

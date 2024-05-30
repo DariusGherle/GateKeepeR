@@ -12,7 +12,6 @@ import java.util.ResourceBundle;
 public class AccessCellController implements Initializable {
     public FontAwesomeIconView in_icon;
     public FontAwesomeIconView out_icon;
-    public Label access_date_lbl;
     public Label nume_lbl;
     public Label carePoarta_lbl;
     public Label status_lbl;
@@ -31,7 +30,6 @@ public class AccessCellController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // Leagă proprietățile accesului la etichetele din interfață
         nume_lbl.textProperty().bind(access.numeProperty());
-        access_date_lbl.textProperty().bind(access.datePropery());
         access_time_lbl.textProperty().bind(access.oraProperty());
         carePoarta_lbl.textProperty().bind(access.carePoartaProperty());
         nrMasina_lbl.textProperty().bind(access.nrMasinaSauIdProperty());
