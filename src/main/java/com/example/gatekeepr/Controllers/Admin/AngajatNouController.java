@@ -16,6 +16,10 @@ import java.util.ResourceBundle;
 import static java.lang.Boolean.TRUE;
 
 public class AngajatNouController implements Initializable {
+    public TextField pNume_fld;
+    public TextField pParola_fld;
+    public Button pCreeazaPortar_btn;
+    public Label error_lbl1;
     @FXML
     private TextField aNume_fld;
     @FXML
@@ -56,7 +60,6 @@ public class AngajatNouController implements Initializable {
     private Button modificaAngajat_btn;
     @FXML
     private Button cautaAngajat_btn;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         aProgramPoarta_choiceBox.setItems(FXCollections.observableArrayList(IntervaleOrare.values()));
@@ -65,6 +68,7 @@ public class AngajatNouController implements Initializable {
 
         aCreeazaAngajat_btn.setOnAction(event -> createAngajat());
         cautaAngajat_btn.setOnAction(event -> cautaAngajat());
+        pCreeazaPortar_btn.setOnAction(event -> createPortar());
     }
 
     private void emptyFields() {
@@ -122,6 +126,8 @@ public class AngajatNouController implements Initializable {
         }
     }
 
+
+
     private void showAlert(Alert.AlertType alertType, String title, String content) {
         Alert alert = new Alert(alertType);
         alert.setTitle(title);
@@ -129,6 +135,32 @@ public class AngajatNouController implements Initializable {
         alert.showAndWait();
     }
 
+
+    private void createPortar() {
+        try {
+            // Verify that all required fields are filled
+            if (pNume_fld.getText().isEmpty() || pParola_fld.getText().isEmpty()) {
+                error_lbl1.setText("Toate câmpurile marcate sunt obligatorii.");
+                return;
+            }
+
+            // Collect data from input fields
+            String nume = pNume_fld.getText();
+            String parola = pParola_fld.getText();
+
+            // Insert the portar into the database
+            String query = "INSERT INTO gatekeepers (adresa_utilizator, parola) VALUES (?, ?)";
+            int rowsAffected = DatabaseHelper.executeUpdate(query, nume, parola);
+
+            if (rowsAffected > 0) {
+                showAlert(Alert.AlertType.INFORMATION, "Success", "Portar adăugat cu succes.");
+                emptyFields();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            showAlert(Alert.AlertType.ERROR, "Error", "A apărut o eroare la adăugarea portarului.");
+        }
+    }
     private void cautaAngajat() {
         // Implement the search functionality
     }
