@@ -10,6 +10,9 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
@@ -69,6 +72,7 @@ public class AngajatNouController implements Initializable {
         aCreeazaAngajat_btn.setOnAction(event -> createAngajat());
         cautaAngajat_btn.setOnAction(event -> cautaAngajat());
         pCreeazaPortar_btn.setOnAction(event -> createPortar());
+        modificaAngajat_btn.setOnAction(event -> modificaAngajat());
     }
 
     private void emptyFields() {
@@ -91,6 +95,46 @@ public class AngajatNouController implements Initializable {
         sDepartament_lbl.setText("");
     }
 
+
+    private void modificaAngajat() {
+        String nume = aNume_fld1.getText();
+
+        if (nume.isEmpty()) {
+            showAlert(Alert.AlertType.WARNING, "Warning", "Introduceți numele angajatului pentru modificare.");
+            return;
+        }
+
+        try {
+            int id = Integer.parseInt(sIdAngajat_lbl.getText());
+            int divizie = Departamente.valueOf(sDepartament_lbl.getText()).ordinal();
+            boolean esteSef = sSefDepartament_box.isSelected();
+            boolean accesAuto = sAdaugaAccesAuto_box.isSelected();
+
+            String query = "UPDATE employees SET divizie = ?, este_sef = ?, acces_bariera = ? WHERE nume = ? AND marca = ?";
+
+            try (Connection connection = DatabaseHelper.getConnection();
+                 PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+                preparedStatement.setInt(1, divizie);
+                preparedStatement.setBoolean(2, esteSef);
+                preparedStatement.setBoolean(3, accesAuto);
+                preparedStatement.setString(4, nume);
+                preparedStatement.setInt(5, id);
+
+                int rowsAffected = preparedStatement.executeUpdate();
+
+                if (rowsAffected > 0) {
+                    showAlert(Alert.AlertType.INFORMATION, "Success", "Angajatul a fost modificat cu succes.");
+                    emptyFields();
+                } else {
+                    showAlert(Alert.AlertType.WARNING, "Warning", "Angajatul nu a fost găsit pentru modificare.");
+                }
+            }
+
+        } catch (NumberFormatException | SQLException e) {
+            e.printStackTrace();
+            showAlert(Alert.AlertType.ERROR, "Error", "A apărut o eroare la modificarea angajatului.");
+        }
+    }
     private void createAngajat() {
         try {
             if (aID_fld.getText().isEmpty() || aNume_fld.getText().isEmpty() || aParola_fld.getText().isEmpty() || aNormaOre_fld.getText().isEmpty() || aDepartament_choiceBox.getValue() == null) {
@@ -162,6 +206,40 @@ public class AngajatNouController implements Initializable {
         }
     }
     private void cautaAngajat() {
-        // Implement the search functionality
+        String nume = aNume_fld1.getText();
+
+        if (nume.isEmpty()) {
+            showAlert(Alert.AlertType.WARNING, "Warning", "Introduceți numele angajatului pentru căutare.");
+            return;
+        }
+
+        String query = "SELECT * FROM employees WHERE nume = ?";
+
+        try (Connection connection = DatabaseHelper.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            preparedStatement.setString(1, nume);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()) {
+                int id = resultSet.getInt("marca");
+                int divizie = resultSet.getInt("divizie");
+                boolean esteSef = resultSet.getBoolean("este_sef");
+                boolean accesAuto = resultSet.getBoolean("acces_bariera");
+
+                sIdAngajat_lbl.setText(String.valueOf(id));
+                sDepartament_lbl.setText(Departamente.values()[divizie].name());
+                sSefDepartament_box.setSelected(esteSef);
+                sAdaugaAccesAuto_box.setSelected(accesAuto);
+
+                showAlert(Alert.AlertType.INFORMATION, "Success", "Angajat găsit.");
+            } else {
+                showAlert(Alert.AlertType.INFORMATION, "Info", "Angajatul nu a fost găsit.");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            showAlert(Alert.AlertType.ERROR, "Error", "A apărut o eroare la căutarea angajatului.");
+        }
     }
 }
